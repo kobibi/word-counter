@@ -47,6 +47,27 @@ describe('string-splitter', () => {
             expectArraysToBeEqual([], result);
         });
 
+        it('returns an empty array when inputString param value is not a string', () => {
+            let inputNonString;
+            let result;
+
+            inputNonString = 23;
+            result = splitIntoWords(inputNonString);
+            expectArraysToBeEqual([], result);
+
+            inputNonString = [];
+            result = splitIntoWords(inputNonString);
+            expectArraysToBeEqual([], result);
+
+            inputNonString = {};
+            result = splitIntoWords(inputNonString);
+            expectArraysToBeEqual([], result);
+
+            inputNonString = () => {};
+            result = splitIntoWords(inputNonString);
+            expectArraysToBeEqual([], result);
+        });
+
         it('return an array with a single word when the string contains a single word.', () => {
             const inputString = 'word';
             const expectedResult = ['word'];
@@ -100,6 +121,38 @@ describe('string-splitter', () => {
             const expectedResult = ['My', 'un', 'dead', 'friend', 'is', 'b', 'witched'];
 
             const result = splitIntoWords(inputString);
+            expectArraysToBeEqual(expectedResult, result);
+        });
+
+        it('handles numbers as words', () => {
+            let inputString;
+            let expectedResult;
+            let result;
+
+            inputString = '1234';
+            expectedResult = ['1234'];
+            result = splitIntoWords(inputString);
+            expectArraysToBeEqual(expectedResult, result);
+
+            inputString = '12-34=56?';
+            expectedResult = ['12', '34', '56'];
+            result = splitIntoWords(inputString);
+            expectArraysToBeEqual(expectedResult, result);
+        });
+
+        it('handles words with both numbers and letters in them', () => {
+            let inputString;
+            let expectedResult;
+            let result;
+
+            inputString = 'a123b4';
+            expectedResult = ['a123b4'];
+            result = splitIntoWords(inputString);
+            expectArraysToBeEqual(expectedResult, result);
+
+            inputString = '1: a12-b34=56c? Yes';
+            expectedResult = ['1', 'a12', 'b34', '56c', 'Yes'];
+            result = splitIntoWords(inputString);
             expectArraysToBeEqual(expectedResult, result);
         });
 
