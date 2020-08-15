@@ -1,3 +1,7 @@
+const fs = require('fs');
+const { wordCountRepository}  = require('../../../../lib/repositories');
+const { fileProcessor } = require('../../../../lib/business-logic/input-processors');
+
 const { Readable}  = require('stream');
 const streamReader = require('../../../../lib/business-logic/helpers/stream-reader');
 
@@ -9,15 +13,9 @@ chai.use(sinonChai);
 const { expect } = chai;
 
 
-const fs = require('fs');
-const { wordCountRepository}  = require('../../../../lib/repositories');
-const { fileProcessor } = require('../../../../lib/business-logic/input-processors');
-
 describe ('file-processor', () => {
 
     let sandbox = sinon.createSandbox();
-    beforeEach('setup sandbox', () => {
-    });
 
     afterEach('restore sandbox', () => {
         sandbox.restore();
