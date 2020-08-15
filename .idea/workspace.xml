@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68769548-5497-4e9e-8d1c-19ef05a759fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/business-logic/helpers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/business-logic/input-processors/files/file-processor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/business-logic/input-processors/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/business-logic/input-processors/strings/string-processor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/business-logic/input-processors/urls/url-processor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/repositories/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/business-logic/helpers/stream-reader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/unit/stream-reader-test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/business-logic/helpers/word-count-mapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/business-logic/helpers/word-count-mapper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/business-logic/word-counter-logic.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/business-logic/word-counter-logic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/controllers/word-counter-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/word-counter-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/business-logic/helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/business-logic/helpers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/business-logic/input-processors/files/file-processor.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/business-logic/input-processors/files/file-processor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/business-logic/input-processors/urls/url-processor.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/business-logic/input-processors/urls/url-processor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/e2e/word-counter-e2e-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/e2e/word-counter-e2e-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/unit/string-splitter-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/string-splitter-test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,148 +22,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48594376">
-      <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/controllers/word-counter-controller.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="149">
-                  <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/business-logic/word-counter-logic.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="134">
-                  <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#700#842#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/business-logic/input-processors/strings/string-processor.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/business-logic/helpers/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/business-logic/helpers/word-count-mapper.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lib/business-logic/input-processors/urls/url-processor.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="254">
-                  <caret line="43" selection-start-line="43" selection-end-line="43" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/node_modules/axios/index.d.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="139">
-                  <caret line="15" column="6" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="47">
-                    <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/repositories/word-count-repository.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/repositories/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lib/business-logic/word-counter-logic.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="148">
-                  <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/business-logic/input-processors/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/business-logic/helpers/string-splitter.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/business-logic/input-processors/files/file-processor.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/unit/stream-reader-test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/business-logic/helpers/stream-reader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="98" selection-start-line="3" selection-start-column="98" selection-end-line="3" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -194,7 +67,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/lib/business-logic/helpers/word-mapper.js" />
         <option value="$PROJECT_DIR$/test/unit/word-mapper-test.js" />
-        <option value="$PROJECT_DIR$/test/unit/string-splitter-test.js" />
         <option value="$PROJECT_DIR$/lib/business-logic/helpers/string-splitter.js" />
         <option value="$PROJECT_DIR$/test/unit/word-count-mapper-test.js" />
         <option value="$PROJECT_DIR$/app.js" />
@@ -206,12 +78,15 @@
         <option value="$PROJECT_DIR$/lib/repositories/index.js" />
         <option value="$PROJECT_DIR$/lib/business-logic/helpers/word-count-mapper.js" />
         <option value="$PROJECT_DIR$/lib/business-logic/input-processors/files/index.js" />
-        <option value="$PROJECT_DIR$/lib/business-logic/helpers/index.js" />
         <option value="$PROJECT_DIR$/lib/business-logic/input-processors/strings/string-processor.js" />
-        <option value="$PROJECT_DIR$/lib/business-logic/input-processors/files/file-processor.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/business-logic/word-counter-logic.js" />
+        <option value="$PROJECT_DIR$/lib/business-logic/helpers/index.js" />
+        <option value="$PROJECT_DIR$/lib/business-logic/input-processors/files/file-processor.js" />
         <option value="$PROJECT_DIR$/lib/business-logic/input-processors/urls/url-processor.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/test/unit/string-splitter-test.js" />
+        <option value="$PROJECT_DIR$/lib/business-logic/helpers/stream-reader.js" />
+        <option value="$PROJECT_DIR$/test/unit/stream-reader-test.js" />
       </list>
     </option>
   </component>
@@ -225,103 +100,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="business-logic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="business-logic" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="business-logic" type="462c0819:PsiDirectoryNode" />
-              <item name="input-processors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="business-logic" type="462c0819:PsiDirectoryNode" />
-              <item name="input-processors" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="business-logic" type="462c0819:PsiDirectoryNode" />
-              <item name="input-processors" type="462c0819:PsiDirectoryNode" />
-              <item name="strings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="business-logic" type="462c0819:PsiDirectoryNode" />
-              <item name="input-processors" type="462c0819:PsiDirectoryNode" />
-              <item name="urls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="axios" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -356,7 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.node app.js">
+  <component name="RunManager" selected="Mocha.Unit Tests">
     <configuration name="node app.js" type="NodeJSConfigurationType" node-parameters="app.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -388,70 +167,50 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597145509446</updated>
-      <workItem from="1597145512304" duration="44592000" />
+      <workItem from="1597145512304" duration="53587000" />
+      <workItem from="1597488446962" duration="1025000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_Tests - 2020.08.11 at 19h 00m 57s.xml">
+    <history-entry file="Unit_Tests - 2020.08.15 at 13h 22m 22s.xml">
       <configuration name="Unit Tests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2020.08.11 at 23h 53m 46s.xml">
+    <history-entry file="Unit_Tests - 2020.08.15 at 13h 22m 33s.xml">
       <configuration name="Unit Tests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2020.08.11 at 23h 54m 06s.xml">
+    <history-entry file="Unit_Tests - 2020.08.15 at 13h 24m 26s.xml">
       <configuration name="Unit Tests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2020.08.12 at 00h 07m 07s.xml">
+    <history-entry file="Unit_Tests - 2020.08.15 at 13h 24m 38s.xml">
       <configuration name="Unit Tests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2020.08.12 at 00h 07m 49s.xml">
+    <history-entry file="Unit_Tests - 2020.08.15 at 13h 36m 27s.xml">
       <configuration name="Unit Tests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2020.08.12 at 00h 08m 41s.xml">
+    <history-entry file="Unit_Tests - 2020.08.15 at 13h 37m 04s.xml">
       <configuration name="Unit Tests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2020.08.12 at 00h 27m 18s.xml">
+    <history-entry file="Unit_Tests - 2020.08.15 at 13h 37m 51s.xml">
       <configuration name="Unit Tests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2020.08.12 at 00h 28m 29s.xml">
+    <history-entry file="Unit_Tests - 2020.08.15 at 13h 44m 25s.xml">
       <configuration name="Unit Tests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2020.08.12 at 00h 28m 38s.xml">
+    <history-entry file="Unit_Tests - 2020.08.15 at 13h 45m 02s.xml">
       <configuration name="Unit Tests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2020.08.12 at 00h 29m 18s.xml">
+    <history-entry file="Unit_Tests - 2020.08.15 at 13h 45m 56s.xml">
       <configuration name="Unit Tests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44592000" />
+    <option name="totallyTimeSpent" value="54612000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="944" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="944" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13984329" />
-      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.3293124" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="2" weight="0.3293124" />
-      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.3293124" />
-      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.39927623" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" weight="0.13984329" />
@@ -463,10 +222,32 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.3293124" />
-      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.39927623" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39927623" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info id="npm" order="1" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13984329" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="TypeScript" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3293124" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.3293124" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.3293124" />
+      <window_info active="true" anchor="bottom" id="Debug" order="8" visible="true" weight="0.39927623" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -479,28 +260,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/business-logic/input-processors/urls/url-processor.js</url>
-          <line>30</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/business-logic/input-processors/urls/url-processor.js</url>
-          <line>23</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/lib/repositories/word-count-repository.js</url>
           <line>1</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/business-logic/input-processors/urls/url-processor.js</url>
-          <line>90</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -544,13 +306,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -579,38 +334,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/string-splitter-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" lean-forward="true" selection-end-column="29" />
-          <folding>
-            <element signature="e#308#320#0" />
-            <element signature="e#393#405#0" />
-            <element signature="e#406#581#0" />
-            <element signature="e#1526#1738#0" />
-            <element signature="e#783#794#0" />
-            <element signature="e#1932#1943#0" />
-            <element signature="e#1095#1106#0" />
-            <element signature="e#1171#1182#0" />
-            <element signature="e#1250#1261#0" />
-            <element signature="e#4423#4447#0" />
-            <element signature="e#4961#5450#0" />
-            <element signature="e#1315#1326#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/repositories/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/business-logic/helpers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -621,23 +348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/business-logic/input-processors/files/file-processor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="47">
-            <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/controllers/word-counter-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -645,31 +355,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/business-logic/helpers/word-count-mapper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/business-logic/input-processors/strings/string-processor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/repositories/word-count-repository.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/business-logic/helpers/string-splitter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -690,10 +379,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/business-logic/input-processors/strings/string-processor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/business-logic/helpers/word-count-mapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/business-logic/helpers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/business-logic/helpers/string-splitter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/business-logic/input-processors/files/file-processor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/business-logic/input-processors/urls/url-processor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="293">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="76" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/string-splitter-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/stream-reader-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/business-logic/helpers/stream-reader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="98" selection-start-line="3" selection-start-column="98" selection-end-line="3" selection-end-column="98" />
         </state>
       </provider>
     </entry>

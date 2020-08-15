@@ -1,5 +1,4 @@
-const chai = require('chai');
-const { expect } = chai;
+const { expect } = require('chai');
 
 const stringSplitter  = require('../../lib/business-logic/helpers/string-splitter');
 

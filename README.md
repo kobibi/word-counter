@@ -1,6 +1,8 @@
 # word-counter
 
 ## Assumptions:
+* Encoding
+    * The encoding of the data read either from the url or the file is UTF-8
 * API
     * The word-count API entry point will receive two query parameters:
         * input - the string to process
