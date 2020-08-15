@@ -1,5 +1,5 @@
 const { Readable}  = require('stream');
-const streamReader = require('../../lib/business-logic/helpers/stream-reader');
+const streamReader = require('../../../../lib/business-logic/helpers/stream-reader');
 
 const chai = require('chai');
 const sinon = require('sinon');
@@ -8,11 +8,10 @@ const sinonChai = require('sinon-chai');
 chai.use(sinonChai);
 const { expect } = chai;
 
+const { consumeStream } = streamReader;
 
 describe ('stream-reader', () => {
     describe ('consumeStream', () => {
-
-        const { consumeStream } = streamReader;
 
         let sandbox = sinon.createSandbox();
         beforeEach('setup sandbox', () => {
@@ -23,7 +22,7 @@ describe ('stream-reader', () => {
         });
 
         it ('consumes a stream in chunks and processes each chunk separately', async () => {
-            const stringChunk = 'this is a string to be processed';
+            const stringChunk = 'this is a string to be processed.';
             const stringArr = [stringChunk, stringChunk, stringChunk]
 
             const readStream = Readable.from(stringArr);
@@ -47,11 +46,14 @@ describe ('stream-reader', () => {
         it('Carries the last word of each chunk to be processed with the next chunk, to make sure no words are not broken.', async() => {
 
             const stringArr = [
-                'The words in string are intentionally bro',    // break in the middle of the word, 'broken' should be the first word in the next chunk
-                'ken in the middle to make sure ',              // last char is a space. no carry
-                'that the stream is c',                         // 'consumed' should be the first word in the next chunk
-                'onsumed correctly, and',                       // 'and' is moved to the next chunk
-                ' words remain intact.',                        // stats with a space. 'and' from the previous chunk will be a separate word. 'intact.' will be processed seprarately.
+                'The words in this string are intentionally bro',   // break in the middle of the word, 'broken' should be the first word in the next chunk
+                'ken in the ',                                      // last char is a space. no carry
+                'middle',                                           // no whitespace, handle as a single word. no carry
+                ' to make sure ',                                   // last char is a space. no carry
+                'that the stream is c',                             // 'consumed' should be the first word in the next chunk
+                'onsumed correctly, and',                           // 'and' is moved to the next chunk
+                ' words remain inta',                               // stats with a space. 'and' from the previous chunk will be a separate word.
+                'ct.',                                              // no whitespace. with the carry - should be the word 'intact.'
             ];
 
             const readStream = Readable.from(stringArr);
@@ -70,12 +72,14 @@ describe ('stream-reader', () => {
             expect(spyCalls.length).to.eq(stringArr.length + 1);
 
             // make sure we got the correct string processed each time
-            expect(spyCalls[0].firstArg).to.eq('The words in string are intentionally ');
-            expect(spyCalls[1].firstArg).to.eq('broken in the middle to make sure ');
-            expect(spyCalls[2].firstArg).to.eq('that the stream is ');
-            expect(spyCalls[3].firstArg).to.eq('consumed correctly, ');
-            expect(spyCalls[4].firstArg).to.eq('and words remain ');
-            expect(spyCalls[5].firstArg).to.eq('intact.');
+            expect(spyCalls[0].firstArg).to.eq('The words in this string are intentionally ');
+            expect(spyCalls[1].firstArg).to.eq('broken in the ');
+            expect(spyCalls[2].firstArg).to.eq('middle');
+            expect(spyCalls[3].firstArg).to.eq(' to make sure ');
+            expect(spyCalls[4].firstArg).to.eq('that the stream is ');
+            expect(spyCalls[5].firstArg).to.eq('consumed correctly, ');
+            expect(spyCalls[6].firstArg).to.eq('and words remain ');
+            expect(spyCalls[7].firstArg).to.eq('intact.');
 
             expect(processedString).to.eq(stringArr.join(''));
         });

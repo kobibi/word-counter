@@ -1,7 +1,7 @@
 const chai = require('chai');
 const { expect } = chai;
 
-const wordMapper = require('../../lib/business-logic/helpers/word-count-mapper');
+const wordMapper = require('../../../../lib/business-logic/helpers/word-count-mapper');
 
 const expectMapsToBeEqual = (expectedMap, resultMap) => {
     // make sure resultMap is an object

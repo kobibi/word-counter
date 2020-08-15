@@ -1,6 +1,6 @@
 const { expect } = require('chai');
 
-const stringSplitter  = require('../../lib/business-logic/helpers/string-splitter');
+const stringSplitter  = require('../../../../lib/business-logic/helpers/string-splitter');
 
 const expectResultToBeArray = (result) => {
     expect(Array.isArray(result)).to.be.true;
