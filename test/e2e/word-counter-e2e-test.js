@@ -5,6 +5,7 @@ describe ('Word Counter service', () => {
         it('returns a 422 status code with structured response when input is incorrect', () => {});
 
         it('returs a 200 status code with structured response when input is correct', async () => {
+
         });
     });
 });
