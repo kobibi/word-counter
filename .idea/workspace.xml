@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68769548-5497-4e9e-8d1c-19ef05a759fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/business-logic/input-processors/urls/url-processor.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/business-logic/input-processors/urls/url-processor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/unit/business-logic/input-processors/url-processor-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/business-logic/input-processors/url-processor-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,11 +24,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unit/business-logic/input-processors/url-processor-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="-1852">
               <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="210">
+                <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -76,15 +86,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/axios/lib/helpers/bind.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -148,7 +149,6 @@
         <option value="$PROJECT_DIR$/lib/business-logic/input-processors/strings/string-processor.js" />
         <option value="$PROJECT_DIR$/lib/business-logic/word-counter-logic.js" />
         <option value="$PROJECT_DIR$/lib/business-logic/helpers/index.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/test/unit/string-splitter-test.js" />
         <option value="$PROJECT_DIR$/lib/business-logic/input-processors/files/file-processor.js" />
         <option value="$PROJECT_DIR$/test/unit/file-processor-test.js" />
@@ -162,6 +162,7 @@
         <option value="$PROJECT_DIR$/lib/business-logic/input-processors/urls/url-processor.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/test/unit/business-logic/input-processors/url-processor-test.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -222,24 +223,6 @@
               <item name="word-counter" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="mocha" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="mocha" type="462c0819:PsiDirectoryNode" />
-              <item name="mocha.js" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="word-counter" type="b2602c69:ProjectViewProjectNode" />
@@ -374,7 +357,7 @@
       <updated>1597145509446</updated>
       <workItem from="1597145512304" duration="53587000" />
       <workItem from="1597488446962" duration="10135000" />
-      <workItem from="1597499290601" duration="7423000" />
+      <workItem from="1597499290601" duration="7613000" />
     </task>
     <servers />
   </component>
@@ -411,7 +394,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71145000" />
+    <option name="totallyTimeSpent" value="71335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="944" extended-state="0" />
@@ -419,11 +402,11 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.16998191" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.16998191" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.3293124" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3293124" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="2" visible="true" weight="0.3293124" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.3293124" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
@@ -591,16 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="76" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/repositories/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -757,8 +730,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/business-logic/input-processors/url-processor-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="-1852">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

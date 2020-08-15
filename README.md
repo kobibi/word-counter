@@ -12,9 +12,8 @@
     * When processing a word-count request with a url, the content at the other end is textual.  
         * We an add validation for that, checking the response headers beforehand, with a HEAD request.
         * If we want to support other mime types, we can add some logic to convert
-    * The given url accepts GET requests. It would be weird if it didn't.
-    * The given url is accessible via http requests, and does not require https access
-        * If needed, this can be specified in another query parameter indiciating which protocol to use
+    * The data is retrieved from the given urls via GET requests. It would be weird if they didn't.
+    * if no protocol is specified in the url - the default protocol is http. 
 
 * File path
     * The file path given is an **absolute** path within the server.
