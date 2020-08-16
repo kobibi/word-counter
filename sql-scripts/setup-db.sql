@@ -8,3 +8,6 @@ CREATE TABLE IF NOT EXISTS words (
     CONSTRAINT pk_words PRIMARY KEY (word)
 );
 
+ALTER USER "root"  IDENTIFIED WITH mysql_native_password BY "wordcounter";
+flush privileges;
+
