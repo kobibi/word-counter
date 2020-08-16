@@ -7,7 +7,7 @@ docker run --name kobi-mysql \
 -d -p 8806:3306 \
 mysql
 
-
+npm i
 
 
 
