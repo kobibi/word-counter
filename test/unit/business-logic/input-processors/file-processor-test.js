@@ -60,7 +60,7 @@ describe ('file-processor', () => {
 
                     console.log(totalWordMap);
                 };
-                const saveWordCountStub = sandbox.stub(wordCountRepository, 'saveWordCount')
+                const saveWordCountStub = sandbox.stub(wordCountRepository, 'saveWordCountMap')
                     .callsFake(aggregateWordCount);
 
                 // Call processFile:
@@ -123,7 +123,7 @@ describe ('file-processor', () => {
 
                     console.log(totalWordMap);
                 };
-                const saveWordCountStub = sandbox.stub(wordCountRepository, 'saveWordCount')
+                const saveWordCountStub = sandbox.stub(wordCountRepository, 'saveWordCountMap')
                     .callsFake(aggregateWordCount);
 
                 // Call processFile:

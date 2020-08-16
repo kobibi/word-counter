@@ -40,7 +40,7 @@ describe ('url-processor', () => {
             const httpsRequestStub = sandbox.stub(https, 'get').callsFake((config, callback) => {
                 callback(mockStream);
             });
-            sandbox.stub(wordCountRepository, 'saveWordCount').returns(Promise.resolve());
+            sandbox.stub(wordCountRepository, 'saveWordCountMap').returns(Promise.resolve());
 
             await urlProcessor.processUrl('http://www.someurl.com');
 
@@ -59,7 +59,7 @@ describe ('url-processor', () => {
             const httpsRequestStub = sandbox.stub(https, 'get').callsFake((config, callback) => {
                 callback(mockStream);
             });
-            sandbox.stub(wordCountRepository, 'saveWordCount').returns(Promise.resolve());
+            sandbox.stub(wordCountRepository, 'saveWordCountMap').returns(Promise.resolve());
 
             await urlProcessor.processUrl('https://www.someurl.com');
 
@@ -78,7 +78,7 @@ describe ('url-processor', () => {
             const httpsRequestStub = sandbox.stub(https, 'get').callsFake((config, callback) => {
                 callback(mockStream);
             });
-            sandbox.stub(wordCountRepository, 'saveWordCount').returns(Promise.resolve());
+            sandbox.stub(wordCountRepository, 'saveWordCountMap').returns(Promise.resolve());
 
             await urlProcessor.processUrl('www.someurl.com');
 
@@ -115,7 +115,7 @@ describe ('url-processor', () => {
 
                 console.log(totalWordMap);
             };
-            const saveWordCountStub = sandbox.stub(wordCountRepository, 'saveWordCount')
+            const saveWordCountStub = sandbox.stub(wordCountRepository, 'saveWordCountMap')
                 .callsFake(aggregateWordCount);
 
             // Call processFile:
@@ -173,7 +173,7 @@ describe ('url-processor', () => {
 
                 // console.log(totalWordMap);
             };
-            const saveWordCountStub = sandbox.stub(wordCountRepository, 'saveWordCount')
+            const saveWordCountStub = sandbox.stub(wordCountRepository, 'saveWordCountMap')
                 .callsFake(aggregateWordCount);
 
             // Call processFile:

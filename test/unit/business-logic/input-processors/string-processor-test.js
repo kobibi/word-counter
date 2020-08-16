@@ -25,7 +25,7 @@ describe ('string-processor', () => {
 
         it('calculates the correct word count and saves it', async () => {
 
-            const saveWordCountStub = sandbox.stub(wordCountRepository, 'saveWordCount')
+            const saveWordCountStub = sandbox.stub(wordCountRepository, 'saveWordCountMap')
                 .callsFake(async () => {
                 });
 

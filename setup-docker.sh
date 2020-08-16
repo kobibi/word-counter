@@ -1,0 +1,1 @@
+mysql -hlocalhost -uroot -pwordcounter < /setup-db.sql
