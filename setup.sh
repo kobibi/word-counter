@@ -1,35 +1,11 @@
-echo 'stopping old image...'
+echo 'Setting up mysql container...'
 
-docker stop kobi-mysql
-
-
-
-echo 'clearing old image...'
-
-docker rm kobi-mysql
-
-
-
-echo 'creating a new docker volume...'
-
-docker volume create mysql-volume
-
-
-echo 'setting up new docker image for mysql'
-
-docker run --name=kobi-mysql -v mysql-volume -p 3306:3306 -e MYSQL_ROOT_PASSWORD=wordcounter -d mysql/mysql-server:latest
-
-docker cp ./setup-docker.sh kobi-mysql:/
-
-
-
-echo 'copying sql script into docker container...'
-docker cp ./setup-db.sql kobi-mysql:/
-docker cp ./after-restart.sql kobi-mysql:/
-
-docker exec kobi-mysql chmod +x setup-docker.sh
-
-
+docker run --name kobi-mysql \
+-v $(pwd)/sql-scripts:/docker-entrypoint-initdb.d/ \
+-e MYSQL_ROOT_PASSWORD=wordcounter \
+-e MYSQL_DATABASE=word_counter \
+-d -p 8806:3306 \
+mysql
 
 
 
